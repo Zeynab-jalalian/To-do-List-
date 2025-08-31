@@ -58,6 +58,7 @@ body {
   cursor: pointer;
 }
 #tasks {
+  display: none;
   background: #fff;
   padding: 30px 20px;
   margin-top: 60px;
@@ -94,4 +95,10 @@ body {
 }
 .completed {
   text-decoration: line-through;
+}
+@media (max-width:500px) {
+  .container {
+    min-width: 350px;
+    border: none;
+  }
 }

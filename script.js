@@ -2,6 +2,7 @@ document.querySelector("#push").onclick = function () {
   if (document.querySelector("#newtask input").value.length == 0) {
     alert("Please Enter A Task");
   } else {
+    document.querySelector("#tasks").style.display="block";
     document.querySelector("#tasks").innerHTML += `
         <div class="task">
           <span id="taskname">
